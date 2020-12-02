@@ -1,7 +1,6 @@
-config
-src
-node_modules
-.babelrc
-.gitignore
-.npmignore
-yarn.lock
+#ignore all
+*
+
+!/dist/**/*
+!/doc/**/*
+!README.md
