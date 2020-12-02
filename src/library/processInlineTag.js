@@ -28,6 +28,8 @@ export default function processInlineTag(
       const fontWeight = htmlElement.style.fontWeight;
       const textDecoration = htmlElement.style.textDecoration;
       const fontStyle = htmlElement.style.fontStyle;
+      const lineHeight = htmlElement.style.lineHeight;
+      const letterSpacing = htmlElement.style.letterSpacing;
       if (color) {
         style.add(`color-${color.replace(/ /g, '')}`);
       }
@@ -48,6 +50,12 @@ export default function processInlineTag(
       }
       if(fontStyle === 'italic'){
           style.add(inlineTags.em)
+      }
+      if (lineHeight) {
+        style.add(`fontsize-${lineHeight}`);
+      }
+      if (letterSpacing) {
+        style.add(`letterspacing-${letterSpacing.replace(/px$/g, '')}`);
       }
     }).toOrderedSet();
   }
