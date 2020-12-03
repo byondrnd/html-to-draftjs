@@ -1,6 +1,6 @@
 {
   "name": "@byondrnd/html-to-draftjs",
-  "version": "1.5.5",
+  "version": "1.5.6",
   "main": "dist/html-to-draftjs.js",
   "repository": {
     "type": "git",
