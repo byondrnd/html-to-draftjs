@@ -53,7 +53,7 @@ export default function processInlineTag(
           style.add(inlineTags.em);
         }
         if (lineHeight) {
-          style.add(`fontsize-${lineHeight}`);
+          style.add(`lineheight-${lineHeight}`);
         }
         if (letterSpacing) {
           style.add(`letterspacing-${letterSpacing.replace(/px$/g, "")}`);
